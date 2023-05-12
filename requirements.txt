@@ -1,5 +1,5 @@
 attrs
-bokeh
+bokeh==3.1.1
 click
 click-plugins
 cligj
