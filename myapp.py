@@ -7,6 +7,15 @@ from bokeh.plotting import figure, curdoc
 from bokeh.layouts import column
 import os
 
+from bokeh.io import curdoc
+from jinja2 import Template
+
+with open('templates/index.html') as f:
+    template = Template(f.read())
+
+curdoc().template = template
+
+
 # Get the current directory path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
