@@ -11,7 +11,7 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Construct the path to the data file
-shapefile_path = os.path.join(current_dir, "Data_2/ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp")
+shapefile_path = os.path.join(current_dir, "ne_110m_admin_0_countries.shp")
 
 # Read the country borders shapefile into python using Geopandas
 gdf = gpd.read_file(shapefile_path)[['ADMIN', 'ADM0_A3', 'geometry']]
